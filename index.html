@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Чек ліст для різних видів подорожей \ Check List for different types of travel"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <title>Check list for the trip</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="logo-link" href="#"
+        ><img
+          class="logo-img"
+          src="./img/favicon.png"
+          alt="logo"
+          width="50"
+          height="50"
+      /></a>
+      <nav class="nav">
+        <button type="button" class="button button__tab" data-tab="0">
+          City
+        </button>
+        <button type="button" class="button button__tab" data-tab="1">
+          Campsite
+        </button>
+        <button type="button" class="button button__tab" data-tab="2">
+          Beach
+        </button>
+        <button type="button" class="button button__tab" data-tab="3">
+          Active
+        </button>
+        <button type="button" class="button button__tab" data-tab="4">
+          Hotels/spa
+        </button>
+        <button type="button" class="button button__tab" data-tab="5">
+          Car
+        </button>
+      </nav>
+      <div class="lang">
+        <button class="button button__lang-select" data-lang="eng">EN</button>
+        <button class="button button__lang-select" data-lang="ua">UA</button>
+      </div>
+    </header>
+    <main class="main container">
+      <div class="main__list-inner">
+        <ul class="list main__list" data-list></ul>
+        <ol class="list main__list-sub" data-sub-list></ol>
+      </div>
+
+      <div class="main__addCheckBox visually-hidden" data-addCheckBox>
+       <div class='main__addCheckBox-inner'>
+          <label
+            for="addCheckBox"
+            class="label label__addCheckBox"
+            data-addCheckBox-label
+            >Add Your checkbox in list</label
+          >
+          <input
+            placeholder="Dont forget..."
+            enterkeyhint="done"
+            type="text"
+            id="addCheckBox"
+            class="input input__add"
+          />
+       </div>
+        <button class="button button__confirm" data-add-button>
+          <svg
+            class="hand-drawn-arrow"
+            width="35"
+            height="35"
+            viewBox="0 0 100 100"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 15 Q5 50 10 85 Q50 95 90 85 Q95 50 90 15 Q50 5 10 15 Z"
+              stroke="black"
+              stroke-width="4"
+              fill="none"
+            />
+            <path
+              class="arrow"
+              d="M30 65 Q48 45 50 45 Q52 45 70 65"
+              stroke="black"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              fill="none"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="main__inner">
+        <h1 class="main__title" data-main-title>
+          Welcome to a check-in for travel!
+        </h1>
+        <p class="main__paragraph" data-main-paragraph>
+          Choose the type of travel from the tabs above.
+        </p>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="reset-div">
+          <button data-reset type="button" class="button button__reset">
+            Reset All
+          </button>
+          <button
+            data-reset-category
+            type="button"
+            class="button button__reset button__reset-category"
+          >
+            Reset Category
+          </button>
+        </div>
+        <div class="footer__searchBox">
+          <label for="search" class="label label__search">
+            <input
+              type="text"
+              class="input input__search"
+              id="search"
+              placeholder="Search for the city ..."
+            />
+          </label>
+          <button class="button button__search" data-search-button>
+            <svg
+              class="hand-drawn-arrow"
+              width="35"
+              height="35"
+              viewBox="0 0 100 100"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10 15 Q5 50 10 85 Q50 95 90 85 Q95 50 90 15 Q50 5 10 15 Z"
+                stroke="black"
+                stroke-width="4"
+                fill="none"
+              />
+              <path
+                class="arrow"
+                d="M30 65 Q48 45 50 45 Q52 45 70 65"
+                stroke="black"
+                stroke-width="4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                fill="none"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <a
+        href="https://github.com/Jaelouss"
+        class="link link__autor"
+        target="_blank"
+        >Jaelous</a
+      >
+    </footer>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
